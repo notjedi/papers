@@ -32,8 +32,10 @@
     * Class probabilities to decide which of the `C` classes (`C` = number of labelled classes in the dataset) the object belongs to.
 
 <br>
-<center> <img src="images/yolo/overview.png" alt="Overview"> </center>
-<center> <img src="images/yolo/iou.jpeg" alt="IOU"> </center>
+<p align="center">
+<img src="images/yolo/overview.png" alt="Overview">
+<img src="images/yolo/iou.jpeg" alt="IOU"> 
+</p>
 <br>
 
 * Model Architecture
@@ -55,7 +57,9 @@
     * They found that if they started with a high learning rate then the model often diverges due to unstable gradients.
 
 <br>
-<center> <img src="images/yolo/architecture.png" alt="Architecture"> </center>
+<p align="center">
+<img src="images/yolo/architecture.png" alt="Architecture">
+</p>
 <br>
 
 * Training
@@ -69,7 +73,9 @@
       effect than in small bounding boxes, to address this issue they predict the square root of the width and height resulting in
       similar losses for both large and small bounding boxes.
 <br>
-<center> <img src="images/yolo/loss-func.png" alt="Loss Function"> </center>
+<p align="center">
+<img src="images/yolo/loss-func.png" alt="Loss Function">
+</p>
 <br>
 
 * Results
@@ -78,11 +84,11 @@
     * Struggles to generalize bounding box on new unusual aspect ratio images.
     * YOLO scores a 57.9 mAP compared to 70.4 with the Faster R-CNN on the Pascal VOC 2012 dataset.
     * Pascal VOC 2012 Leaderboard
-    <center> <img src="images/yolo/leaderboard.png" alt="Leaderboard"> </center>
+    <img src="images/yolo/leaderboard.png" alt="Leaderboard">
 
     * They achieve 45 FPS (22ms/image), compared to 7 FPS (142ms/image) with Faster R-CNN.
     * YOLO on a diverse dataset, as you can see it generalizes well on artworks too.
-    <center> <img src="images/yolo/results.png" alt="Results"> </center>
+    <img src="images/yolo/results.png" alt="Results">
 
 
 ### Related Material
