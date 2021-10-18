@@ -81,8 +81,6 @@
     <center> <img src="images/yolo/leaderboard.png" alt="Leaderboard"> </center>
 
     * They achieve 45 FPS (22ms/image), compared to 7 FPS (142ms/image) with Faster R-CNN.
-    <center> <img src="images/yolo/leaderboard.png" alt="Leaderboard"> </center>
-
     * YOLO on a diverse dataset, as you can see it generalizes well on artworks too.
     <center> <img src="images/yolo/results.png" alt="Results"> </center>
 
