@@ -40,12 +40,15 @@
     * Skip connections can be used in both fully connected and convolutional layers.
 
 <br>
+<p align="center">
+<img src="images/deep-residual-learning-for-image-recognition/basic-resblock.png" alt="Residual Blocks">
+</p>
 
 * Model Architecture
 
     * Skip connections are made b/w 2 or 3 layers.
     * They don't see any improvements for 1 layer skip connections, i.e `(W * x) + x`.
-    * If the dimensions of the `F(x)` and `x` don't match, then they propose a few methods to match them.
+    * If the dimensions of the `F(x)` and `x` don't match, then they propose a few methods to match them:
         1. Add zero padded entries for the extra dimensions(no extra parameters).
         2. Use `1x1` convolutions with matching dimensions(extra parameters).
     * Batch Normalization is used right after convolution and before activation function.
@@ -66,8 +69,8 @@
     * Models are trained on the 1.28 million training images from ImageNet which has 1000 classes.
     * They train a bunch of models with 18, 34, 50, 101, 152 layers.
     * They experiment 3 different ways to match dimensions b/w residual layers:
-        1. (A) Zero-padding shortcuts
-        2. (B) Projection shortcuts(1x1 convs) are used for increasing dimensions
+        1. (A) Zero-padding shortcuts.
+        2. (B) Projection shortcuts(1x1 convs) are used for increasing dimensions.
         3. (C) All shortcuts are projections.
     <br>
     out of which (B) works the best.
@@ -81,6 +84,9 @@
 
 * Results
 
+    * They have no problem optimizing very deep networks(1000 layers).
+    * Activation signals are low compared to other "plain" networks.
+    * They also generalize well on other recognition tasks such as object detection.
     * The plain networks error rate goes up from 27.94% to 28.54% as the number of layers increased from 18 to 34
       but in the case of ResNets it decreases from 27.88% to 25.03% for the same.
 
