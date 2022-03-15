@@ -37,7 +37,7 @@ layers which make the model hard to optimize. -->
 <img src="images/deep-residual-learning-for-image-recognition/performance-degradation.png"
 alt="Performance Degradation" width=450>
 <img src="images/deep-residual-learning-for-image-recognition/resnet-block.png"
-alt="Residual Block" width=300> 
+alt="Residual Block" width=300>
 </p>
 <br>
 
