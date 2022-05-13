@@ -96,7 +96,6 @@
   - YOLO scores a 57.9 mAP compared to 70.4 with the Faster R-CNN on the Pascal VOC 2012 dataset.
   - Pascal VOC 2012 Leaderboard
     <img src="images/yolo/leaderboard.png" alt="Leaderboard">
-
   - They achieve 45 FPS (22ms/image), compared to 7 FPS (142ms/image) with Faster R-CNN.
   - YOLO on a diverse dataset, as you can see it generalizes well on artworks too.
     <img src="images/yolo/results.png" alt="Results">
